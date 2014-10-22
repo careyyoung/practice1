@@ -6,11 +6,23 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>firstJSP</title>
-<script type="text/javascript">
-	function login{
-		
+
+<script language="javascript">
+	function aa() {
+		var tt = document.getElementById("select").value;
+		alert(tt);
+	}
+	function xx() {
+		var kk = document.getElementById("select").options;
+		for (var i = 0; i < kk.length; i++) {
+			if (kk[i].value == 30) {
+				kk[i].selected = true;
+				break;
+			}
+		}
 	}
 </script>
+
 </head>
 <body>
 	<%
@@ -34,9 +46,20 @@
 	</form>
 
 	<form action="login.jsp" method="post">
-		用户名：<input type="text" name='username'> 
-		<input type="submit" value="登录" onclick="login()"/>
+		用户名：<input type="text" name='username'> <input type="submit"
+			value="登录" onclick="login()" />
 	</form>
+	<select name="select" onchange="aa()" id="select">
+		<option value="0">呵呵</option>
+		<option value="1">哈哈</option>
+		<option value="2">嘿嘿</option>
+		<option value="3">等等</option>
+		<option value="50">试试</option>
+		<option value="30">测试</option>
+		<option value="35">感觉</option>
+	</select>
+	<input name="ttt" type="button" id="ttt" onclick="xx()" />
+
 
 </body>
 </html>
