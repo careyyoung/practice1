@@ -69,7 +69,7 @@
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<artifactId>maven-jetty-plugin</artifactId>
-				<version>6.1.26</version>
+				<version>6.1.10</version>
 				<configuration>
 					<contextPath>/</contextPath>
 					<connectors>
@@ -100,6 +100,10 @@
 			</plugin>
 		</plugins>
 	</build>
+	<properties>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 </project>
 
 
