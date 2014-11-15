@@ -7,7 +7,9 @@
 <title>test</title>
 </head>
 <body>
-<a href="http://wxtest.qk.cc/mobile2/i" target="_blank"> 测试环境 </a>
+<a href="http://wxtest.qk.cc/mobile2/i" 
+   target="_blank"
+   onclick="alert('单击连接')"> 测试环境 </a>
 <br/>
 <br/>
 <a href="http://172.16.85.182:9090/qiankun-site/mobile2" target="_blank"> 开发环境 </a>
