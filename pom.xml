@@ -50,6 +50,11 @@
 			<artifactId>jquery-ui</artifactId>
 			<version>1.11.1</version>
 		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>Practice1</finalName>
